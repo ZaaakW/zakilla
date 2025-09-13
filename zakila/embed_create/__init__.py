@@ -6,7 +6,7 @@ from discord import ButtonStyle, CategoryChannel, Embed, ForumChannel, HTTPExcep
 from discord.ext.commands import Bot
 from discord.ui import Item, Select, select, Button, button, View
 from zakila.embed_create.methods import CreatorMethods
-from zakila import ChannelSelectPrompt
+from zakila.utils import ChannelSelectPrompt
 
 
 __all__ = ("EmbedCreator",)
