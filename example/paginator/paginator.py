@@ -1,4 +1,4 @@
-from zakila.paginator import Paginator, Emoji
+from zakilla.paginator import Paginator, Emoji
 from discord import Embed
 
 import discord

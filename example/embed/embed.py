@@ -1,4 +1,4 @@
-from zakila.embed_create import EmbedCreator
+from zakilla.embed_create import EmbedCreator
 from discord import Embed
 
 import discord
