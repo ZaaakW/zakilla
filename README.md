@@ -25,22 +25,9 @@ Zakila is a powerful Python library designed to simplify and enhance the develop
 ```bash
 pip install zakila
 ```
-
-## Usage
-
-Here's a quick example to get you started:
-
-```python
-import zakila
-from zakila import Bot
-
-bot = Bot(command_prefix="!")
-
-@bot.command()
-async def hello(ctx):
-    await ctx.send("Hello from Zakila!")
-
-bot.run("YOUR_DISCORD_BOT_TOKEN")
+or 
+```
+pip install git+https://github.com/ZaaakW/zakila.git
 ```
 
 ## Documentation
