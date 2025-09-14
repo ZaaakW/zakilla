@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from typing import Callable, Dict
-from zakilla.utils import ModalInput, SelectPrompt
 from discord import Colour, Embed, HTTPException, Interaction, SelectOption, TextStyle
 from discord.ui import TextInput
+
+from zakilla.utils import ModalInput, SelectPrompt
 
 class CreatorMethods:
     """

@@ -5,9 +5,9 @@ from typing import Optional, Any
 from discord import ButtonStyle, CategoryChannel, Embed, ForumChannel, HTTPException, Interaction, StageChannel, Colour, SelectOption
 from discord.ext.commands import Bot
 from discord.ui import Item, Select, select, Button, button, View
+
 from zakilla.embed_create.methods import CreatorMethods
 from zakilla.utils import ChannelSelectPrompt
-
 
 __all__ = ("EmbedCreator",)
 

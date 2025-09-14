@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="zakilla",
-    version="1.0.0",
+    version="1.0.1",
     description="A modern, easy to use, and fully customizable pagination system for discord.py",
     author="ZaaakW",
     license="Apache-2.0",

@@ -1,5 +1,4 @@
 import discord
-import logging
 
 from asyncio import TimeoutError as AsyncTimeoutError
 from contextlib import suppress
@@ -11,8 +10,6 @@ from discord.ext.commands import Context
 from discord.ui import Button, View
 
 from .types import Page, Emoji, ButtonConfig
-
-log = logging.getLogger(__name__)
 
 class PaginatorButton(Button):
     """Button class for Paginator."""

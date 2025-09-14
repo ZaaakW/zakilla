@@ -32,7 +32,7 @@ pip install git+https://github.com/ZaaakW/zakilla.git
 
 ## Documentation
 
-Click the url documentataion for information detail
+Click the url documentataion for information details
 
 ### Examples
 
@@ -40,10 +40,6 @@ Click the url documentataion for information detail
 - [Embed Example](https://github.com/ZaaakW/zakilla/blob/main/examples/embed_example.md): See how to create embed creator with setup messages.
 
 For more usage patterns and advanced features, check the [examples directory](https://github.com/ZaaakW/zakilla/tree/main/examples).
-
-## Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](https://github.com/ZaaakW/zakilla/blob/main/CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
