@@ -1,5 +1,5 @@
 [project]
 name = "zakilla"
 description = "A modern, easy to use, and fully customizable pagination system for discord.py"
-version = "1.0.1"
+version = "1.0.2"
 readme = "README.md"
