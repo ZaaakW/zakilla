@@ -23,7 +23,6 @@ class CreatorMethods:
             "thumbnail": self.edit_thumbnail,
             "image": self.edit_image,
             "footer": self.edit_footer,
-            "color": self.edit_colour,
             "addfield": self.add_field,
             "removefield": self.remove_field,
         }
@@ -92,11 +91,23 @@ class CreatorMethods:
                 max_length=2000,
             )
         )
+        modal.add_item(
+            TextInput(
+                label="Embed Colour",
+                placeholder="The colour you want to display on embed (e.g: #303236)",
+                max_length=20
+            )
+        )
         await interaction.response.send_modal(modal)
         await modal.wait()
-        self.embed.title, self.embed.description = str(modal.children[0]), str(
-            modal.children[1]
-        )
+        try:
+            colour = Colour.from_str(str(modal.children[2]))
+        except:
+            await interaction.followup.send(
+                "Please provide a valid hex code.", ephemeral=True
+            )
+        else:
+            self.embed.title, self.embed.description, self.embed.colour = str(modal.children[0]), str(modal.children[1]), colour
 
     async def edit_thumbnail(self, interaction: Interaction) -> None:
         """This method edits the embed's thumbnail"""
@@ -153,27 +164,6 @@ class CreatorMethods:
         self.embed.set_footer(
             text=str(modal.children[0]), icon_url=str(modal.children[1])
         )
-
-    async def edit_colour(self, interaction: Interaction) -> None:
-        """This method is edits the embed's colour"""
-        modal = ModalInput(title="Edit Embed Colour")
-        modal.add_item(
-            TextInput(
-                label="Embed Colour",
-                placeholder="The colour you want to display on embed (e.g: #303236)",
-                max_length=20
-            )
-        )
-        await interaction.response.send_modal(modal)
-        await modal.wait()
-        try:
-            colour = Colour.from_str(str(modal.children[0]))
-        except:
-            await interaction.followup.send(
-                "Please provide a valid hex code.", ephemeral=True
-            )
-        else:
-            self.embed.color = colour
 
     async def add_field(self, interaction: Interaction) -> None:
         if len(self.embed.fields) >= 25:

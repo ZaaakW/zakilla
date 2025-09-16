@@ -35,8 +35,8 @@ Click the url documentataion for information details
 
 ### Examples
 
-- [Paginator Example](https://github.com/ZaaakW/zakilla/blob/main/examples/paginator_example.md): See how to create interactive paginated messages.
-- [Embed Example](https://github.com/ZaaakW/zakilla/blob/main/examples/embed_example.md): See how to create embed creator with setup messages.
+- [Embed Example](https://github.com/ZaaakW/zakilla/tree/main/examples/embed): See how to create embed creator with setup messages.
+- [Paginator Example](https://github.com/ZaaakW/zakilla/tree/main/examples/paginator): See how to create interactive paginated messages.
 
 For more usage patterns and advanced features, check the [examples directory](https://github.com/ZaaakW/zakilla/tree/main/examples).
 
